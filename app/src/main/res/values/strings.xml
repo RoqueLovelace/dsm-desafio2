@@ -31,6 +31,8 @@
     <string name="btn_agre">Agregar destino</string>
     <string name="btn_guar">Guardar</string>
     <string name="btn_actu">Actualizar</string>
+    <string name="btn_edit">Editar</string>
+    <string name="msg_elim_ok">Destino eliminado</string>
     <string name="btn_elim">Eliminar</string>
     <string name="btn_canc">Cancelar</string>
     <string name="btn_gale">Seleccionar imagen</string>

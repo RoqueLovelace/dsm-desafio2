@@ -1,10 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetalleActivity">
+    android:background="@color/ui_bg"
+    android:fillViewport="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/ui_padding">
+
+        <ImageView
+            android:id="@+id/imgDest"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_gap_big" />
+
+        <TextView
+            android:id="@+id/tvNomb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/UiTitle" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_gap" />
+
+        <TextView
+            android:id="@+id/tvPais"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/UiBody" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_gap" />
+
+        <TextView
+            android:id="@+id/tvPrec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/UiBody" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_gap" />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/UiBody" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_gap_big" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_edit"
+            style="@style/UiButton" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_gap" />
+
+        <Button
+            android:id="@+id/btnElim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_elim"
+            style="@style/UiButtonDanger" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_gap" />
+
+        <Button
+            android:id="@+id/btnVolv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_volv"
+            style="@style/UiButtonAlt" />
+
+    </LinearLayout>
+
+</ScrollView>

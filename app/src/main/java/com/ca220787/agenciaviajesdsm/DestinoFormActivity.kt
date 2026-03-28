@@ -33,6 +33,7 @@ class DestinoFormActivity : AppCompatActivity() {
 
     private var uriImag: Uri? = null
     private var txtBase: String = ""
+    private var idDestEdit: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -68,6 +69,41 @@ class DestinoFormActivity : AppCompatActivity() {
         btnCanc.setOnClickListener {
             finish()
         }
+
+        idDestEdit = intent.getStringExtra("idDest")
+
+        if (idDestEdit != null) {
+            cargarDatosEdicion()
+        }
+    }
+
+    private fun cargarDatosEdicion() {
+        FirebaseDatabase.getInstance().getReference("destinos")
+            .child(idDestEdit!!)
+            .get()
+            .addOnSuccessListener { snap ->
+                val dest = snap.getValue(Destino::class.java)
+
+                if (dest != null) {
+                    etNomb.setText(dest.nombDest)
+                    etPrec.setText(dest.precDest.toString())
+                    etDesc.setText(dest.descDest)
+                    txtBase = dest.imagBase
+
+                    val arrPais = resources.getStringArray(R.array.arr_pais)
+                    val index = arrPais.indexOf(dest.paisDest)
+                    if (index >= 0) {
+                        spnPais.setSelection(index)
+                    }
+
+                    val bit = ImgUtil.base64ABitmap(dest.imagBase)
+                    if (bit != null) {
+                        imgDest.setImageBitmap(bit)
+                    }
+
+                    tvTitu.text = getString(R.string.btn_edit)
+                }
+            }
     }
 
     private fun cargarSpinner() {
@@ -107,8 +143,7 @@ class DestinoFormActivity : AppCompatActivity() {
         }
 
         val prec = precTxt.toDouble()
-        val idDest = FirebaseDatabase.getInstance().getReference("destinos").push().key ?: return
-
+        val idDest = idDestEdit ?: FirebaseDatabase.getInstance().getReference("destinos").push().key ?: return
         val dest = Destino(
             idDest = idDest,
             nombDest = nomb,
