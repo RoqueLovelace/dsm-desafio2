@@ -1,10 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    android:background="@color/ui_bg"
+    android:fillViewport="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/ui_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ui_gap_big"
+            android:text="@string/tit_login"
+            style="@style/UiTitle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_mail"
+            style="@style/UiBody" />
+
+        <EditText
+            android:id="@+id/etMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_mail"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_gap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_pass"
+            style="@style/UiBody" />
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_pass"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_gap_big" />
+
+        <Button
+            android:id="@+id/btnLogi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_logi"
+            style="@style/UiButton" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_gap" />
+
+        <Button
+            android:id="@+id/btnIrRegi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_ir_regi"
+            style="@style/UiButtonAlt" />
+
+    </LinearLayout>
+
+</ScrollView>
