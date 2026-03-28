@@ -46,7 +46,6 @@
     <string name="msg_prec_inv">El precio debe ser mayor a 0</string>
     <string name="msg_desc_min">La descripción debe tener al menos 20 caracteres</string>
     <string name="msg_img_req">Debe seleccionar una imagen</string>
-    <string name="msg_elim_conf">¿Desea eliminar este destino?</string>
     <string name="msg_ok_regi">Usuario registrado correctamente</string>
     <string name="msg_ok_logi">Sesión iniciada correctamente</string>
     <string name="msg_ok_guar">Destino guardado correctamente</string>
@@ -57,7 +56,7 @@
     <string name="msg_ok_img">Imagen seleccionada</string>
     <string name="acc_imag">Imagen del destino</string>
     <string name="lbl_pais_hint">Seleccione un país</string>
-
+    <string name="msg_elim_conf">¿Desea eliminar este destino?</string>
 
     <string-array name="arr_pais">
         <item>Seleccione un país</item>

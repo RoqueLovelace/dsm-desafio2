@@ -2,8 +2,12 @@ package com.ca220787.agenciaviajesdsm
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.*
+import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -59,7 +63,7 @@ class DetalleActivity : AppCompatActivity() {
         }
 
         btnElim.setOnClickListener {
-            eliminarDestino()
+            mostrarAlertaEliminar()
         }
 
         btnVolv.setOnClickListener {
@@ -85,10 +89,22 @@ class DetalleActivity : AppCompatActivity() {
         }
     }
 
+    private fun mostrarAlertaEliminar() {
+        AlertDialog.Builder(this)
+            .setMessage(getString(R.string.msg_elim_conf))
+            .setPositiveButton(getString(R.string.btn_elim)) { _, _ ->
+                eliminarDestino()
+            }
+            .setNegativeButton(getString(R.string.btn_canc), null)
+            .show()
+    }
+
     private fun eliminarDestino() {
         dbRef.child(idDest).removeValue().addOnSuccessListener {
             Toast.makeText(this, getString(R.string.msg_elim_ok), Toast.LENGTH_SHORT).show()
             finish()
+        }.addOnFailureListener {
+            Toast.makeText(this, getString(R.string.msg_err_gene), Toast.LENGTH_SHORT).show()
         }
     }
 }
