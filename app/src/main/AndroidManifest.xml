@@ -10,28 +10,34 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AgenciaViajesDSM">
+        android:theme="@style/Theme.AgenciaViajesDSM"
+        tools:targetApi="31">
+
         <activity
             android:name=".DetalleActivity"
             android:exported="false" />
+
         <activity
             android:name=".DestinoFormActivity"
             android:exported="false" />
+
         <activity
             android:name=".RegistroActivity"
             android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
