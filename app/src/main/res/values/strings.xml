@@ -52,8 +52,10 @@
     <string name="msg_ok_elim">Destino eliminado correctamente</string>
     <string name="msg_err_gene">Ocurrió un error</string>
     <string name="msg_sin_data">No hay destinos registrados</string>
-
+    <string name="msg_ok_img">Imagen seleccionada</string>
     <string name="acc_imag">Imagen del destino</string>
+    <string name="lbl_pais_hint">Seleccione un país</string>
+
 
     <string-array name="arr_pais">
         <item>Seleccione un país</item>
