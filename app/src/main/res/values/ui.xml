@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ui_bg">#F7F9FC</color>
+    <color name="ui_primary">#1565C0</color>
+    <color name="ui_primary_dark">#0D47A1</color>
+    <color name="ui_accent">#26A69A</color>
+    <color name="ui_text">#1F2937</color>
+    <color name="ui_muted">#6B7280</color>
+    <color name="ui_white">#FFFFFF</color>
+    <color name="ui_danger">#C62828</color>
+
+    <dimen name="ui_padding">16dp</dimen>
+    <dimen name="ui_gap">12dp</dimen>
+    <dimen name="ui_gap_big">20dp</dimen>
+    <dimen name="ui_radius">0dp</dimen>
+    <dimen name="ui_title">22sp</dimen>
+    <dimen name="ui_subtitle">16sp</dimen>
+    <dimen name="ui_body">14sp</dimen>
+    <dimen name="ui_btn_height">48dp</dimen>
+    <dimen name="ui_img_card">96dp</dimen>
+
+    <style name="UiTitle">
+        <item name="android:textSize">@dimen/ui_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/ui_text</item>
+    </style>
+
+    <style name="UiSubtitle">
+        <item name="android:textSize">@dimen/ui_subtitle</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/ui_text</item>
+    </style>
+
+    <style name="UiBody">
+        <item name="android:textSize">@dimen/ui_body</item>
+        <item name="android:textColor">@color/ui_text</item>
+    </style>
+
+    <style name="UiButton">
+        <item name="android:backgroundTint">@color/ui_primary</item>
+        <item name="android:textColor">@color/ui_white</item>
+        <item name="android:minHeight">@dimen/ui_btn_height</item>
+    </style>
+
+    <style name="UiButtonAlt">
+        <item name="android:backgroundTint">@color/ui_accent</item>
+        <item name="android:textColor">@color/ui_white</item>
+        <item name="android:minHeight">@dimen/ui_btn_height</item>
+    </style>
+
+    <style name="UiButtonDanger">
+        <item name="android:backgroundTint">@color/ui_danger</item>
+        <item name="android:textColor">@color/ui_white</item>
+        <item name="android:minHeight">@dimen/ui_btn_height</item>
+    </style>
+</resources>

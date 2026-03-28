@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "223022511609",
+    "project_id": "dsm-d-2",
+    "storage_bucket": "dsm-d-2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223022511609:android:83227882eeaa54b1e03928",
+        "android_client_info": {
+          "package_name": "com.ca220787.agenciaviajesdsm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsL9R2wKmSjHbLgk0QhG9DIfHr-yLY27E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

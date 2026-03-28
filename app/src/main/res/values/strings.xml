@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Agencia Viajes DSM</string>
+
+    <string name="tit_login">Iniciar sesión</string>
+    <string name="tit_regi">Crear cuenta</string>
+    <string name="tit_cata">Catálogo de destinos</string>
+    <string name="tit_form_crea">Nuevo destino</string>
+    <string name="tit_form_edit">Editar destino</string>
+    <string name="tit_deta">Detalle del destino</string>
+
+    <string name="lbl_mail">Correo electrónico</string>
+    <string name="lbl_pass">Contraseña</string>
+    <string name="lbl_pass_conf">Confirmar contraseña</string>
+    <string name="lbl_nomb">Nombre del destino</string>
+    <string name="lbl_pais">País</string>
+    <string name="lbl_prec">Precio del paquete</string>
+    <string name="lbl_desc">Descripción del viaje</string>
+    <string name="lbl_imag">Imagen del destino</string>
+
+    <string name="hint_mail">Ingrese su correo</string>
+    <string name="hint_pass">Ingrese su contraseña</string>
+    <string name="hint_pass_conf">Repita su contraseña</string>
+    <string name="hint_nomb">Ingrese el nombre del destino</string>
+    <string name="hint_prec">Ingrese el precio</string>
+    <string name="hint_desc">Ingrese una descripción mínima de 20 caracteres</string>
+
+    <string name="btn_logi">Ingresar</string>
+    <string name="btn_ir_regi">Ir a registro</string>
+    <string name="btn_regi">Registrar usuario</string>
+    <string name="btn_ir_logi">Ir a login</string>
+    <string name="btn_agre">Agregar destino</string>
+    <string name="btn_guar">Guardar</string>
+    <string name="btn_actu">Actualizar</string>
+    <string name="btn_elim">Eliminar</string>
+    <string name="btn_canc">Cancelar</string>
+    <string name="btn_gale">Seleccionar imagen</string>
+    <string name="btn_cerr">Cerrar sesión</string>
+    <string name="btn_volv">Volver</string>
+
+    <string name="msg_req">Complete todos los campos</string>
+    <string name="msg_mail_inv">Correo inválido</string>
+    <string name="msg_pass_min">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="msg_pass_diff">Las contraseñas no coinciden</string>
+    <string name="msg_prec_inv">El precio debe ser mayor a 0</string>
+    <string name="msg_desc_min">La descripción debe tener al menos 20 caracteres</string>
+    <string name="msg_img_req">Debe seleccionar una imagen</string>
+    <string name="msg_elim_conf">¿Desea eliminar este destino?</string>
+    <string name="msg_ok_regi">Usuario registrado correctamente</string>
+    <string name="msg_ok_logi">Sesión iniciada correctamente</string>
+    <string name="msg_ok_guar">Destino guardado correctamente</string>
+    <string name="msg_ok_actu">Destino actualizado correctamente</string>
+    <string name="msg_ok_elim">Destino eliminado correctamente</string>
+    <string name="msg_err_gene">Ocurrió un error</string>
+    <string name="msg_sin_data">No hay destinos registrados</string>
+
+    <string name="acc_imag">Imagen del destino</string>
+
+    <string-array name="arr_pais">
+        <item>Seleccione un país</item>
+        <item>El Salvador</item>
+        <item>Guatemala</item>
+        <item>Honduras</item>
+        <item>Nicaragua</item>
+        <item>Costa Rica</item>
+        <item>Panamá</item>
+        <item>México</item>
+        <item>Colombia</item>
+        <item>Perú</item>
+        <item>España</item>
+        <item>Japón</item>
+    </string-array>
+</resources>
